@@ -1,0 +1,269 @@
+Types of classes
+==================
+There are two types of classes
+
+1.Encapsulated class
+2.uncapsulated class
+
+Note:classes are just like Gadda if no bed sheet is used they remain 
+uncapsulated .
+
+if bed sheet is used they become Encapsulated .
+
+Mechanism of wrapping data member and member function into a class is called as encapsulated.
+
+Mechanism of wrapping classes is called Namespacing.
+
+Note that :Namespacing is most beautiful concept for psr-4 Autoloading(composer) you must use.
+
+Namespacing :is a solution for name conflict.
+we know that we cannot redclare class or function because signature in php can be declarely only.
+
+It is the same concept in which you can not make duplicate folder or files in a operating system similarly you can not make class or functions with same.
+
+Namespacing In General
+**************************
+c:Drive
+    Movie 
+        southmovie
+        bhojpurimovie
+        etc......
+       southmovie[Error]
+       movie[Error]
+D:Drive
+movies[solution]
+
+Redclaration Error Generate Fatal error(compilation error
+
+why do we need namespace(version  5.3.0):to resolve class naming conflicts.
+=========================================
+
+Note:-Encapsulated class :
+        classes with namespace
+Uncapsulated class
+        1.concrete class
+		     Signature + implementation
+		2.Non concrete class
+		     partial signature+ partial Implementation
+			 
+1.Abstract class
+2.Interface
+
+
+3.Miscellenous
+     Trait
+	 
+Note:-
+classification of class
+========================
+Level wise classfication(on the basis of level)
+         single level 
+		 multi level
+		 
+		 
+classification on the basis Inheritance
+Super-sub
+master-sub
+parent-sub
+derived-driving
+inherited-inheriting
+
+classfication on the basis of Encapsulated
+Incapsulated class
+uncapsulated class
+================================================
+
+classfication on the Basis of Signature
+within the class
+outside the class
+
+How to make namespace 
+==========================
+Namespace should be first line of the php script just after <?php ?> 
+
+Syntex:
+Declare a normal class
+class Test{
+//code
+}
+
+Use namespace <name_of_Namespace> or <Donot use any name>;
+
+Due to namespace is of two type
+userdefined namespace or named namespace
+gloabl namespace or Anonymous namespace:no name
+
+
+Naming convention of namespace
+**********************************
+Each namespace must follow class name convention
+pascal style
+
+Namespace name should be capital
+each line must be terminated .
+no other code must lie outside the namespace.
+
+signature of namespace
+***********************
+Body of the namespace of called signature
+namespace Testnamespace{
+
+//class and object will lie inside this
+}
+
+if some code Resides outsides then compilation error will be raised called as fatal error.
+
+Scope of the class
+*********************
+We know that in an uncapsulated class we can declare object of class inside or outside
+ But in a Enacapsulated where namespace is mendatory class will be local scope of namespace.
+ 
+ since comments are a two types
+ ==================================
+ 1.normal comments 
+ 2.Annotations
+ 
+ These are comment which are used for defined the documentation of a class or namespace.
+ 
+Conclusion
++++++++++++++++
+1. Namespace donot Allow fileIncusion
+   you cannot use require_once ,require,include,include_once anything Because namespace 
+   should be first line.
+
+2.Namespace donot allow any statement before its Declaretion
+because namespace should be first line.
+
+3.Namespace even donot allow gloabal constant Declaretion because namespace should be first line.
+
+What namespace Allow
+====================
+1.Annotations are allowed 
+  Note:- Sometimes Annotations  are very very Important for cms like wordpress because
+  in case of plugin Development and Theme development.
+  
+  No module becomes a package if Annotations not used.
+  
+2.Namespace allow strict type declaration statement to the first line 
+if declare() syntex is used 
+namespace should be very first line of the script.
+
+
+Namespace v/s  strict type declaration
+=========================================
+strict_type  should be first line
+namespace should be second line if strict_type used and first line
+if not used 
+
+PHP Documentation
+=================
+1.<?php
+2.Annotations
+3.StrictType Declaretion
+4.Namespace
+
+Biggest Question:
+Suppose we know inheritance is most valuable concept 
+suppose we have a parent class in a namespace papa
+and now child class with namespace son is required 
+since you cannot include the file how you will use it.
+
+============================================================
+
+This can be done using PSR-4 Autoloading or namespace Autoloading..
+
+PSR-4-Autoloading is maintained by composer
+Note that Dependency Manager is not single concept it is same as pip in python
+
+npm node package manager
+maven Android package manager(Appache)
+
+composer for php.
+
+word biggest packate repository
+=================================
+(Maven)
+
+====================================
+
+PSR Autoloading:It refers to php standurd recommedation specification how to autoload 
+the class file/and php files 
+
+PSR-0 : Autoloading using include
+PSR-1 : Autoloading using include_once
+PSR-2 : Autoloading using classesname spl_autoload_register
+class name should be same and filename should name.
+
+PSR-3:Autoloading using classname spl_autoload_register class name should be
+same and filename should name but class encapsulated by namespace.
+
+PSR-4:Autoloading using namespace and subnamespace using vendor namespace.
+
+  fully qualified Name:-\<namespace>\<subnamespace>*\<classname>
+
+vendor 
+   |----->Foldername
+              |-------->Filename<encapsulated class with fully-qualified name>
+			  
+<vendor>
+    |------>
+	     namespace<foldername>{
+		 namespace 
+		 class filename{
+		 }
+		 }
+	calling:
+	$obj =new\foldername\classesname();
+	$obj->test();
+	or use keyword "use" keyword
+	
+	use\foldername\classesname;
+	use foldername\classesname;
+	
+	or 
+	you can use namespace Aliasing
+	use foldername\classname as <Alias-name>;
+	
+	If subfolder is used
+	**********************
+	<vendor>
+	    |------------>Foldername <namespace>
+                            |------------>subfolder<subnamespace>
+                                            |-------------->subfolder <subnamespace>
+                                                            |--->Filename<classesname>
+
+Namespace Declaretion:
+**********************												
+<vendor>
+    |
+namespace <foldername>\<subfoldername-1>\<subfoldername-2>\<subfoldername-3>
+{
+class filename{
+}
+}
+calling:
+<foldername>\<subfoldername-1>\<subfoldername-2>\<subfoldername-3>\classesname;
+
+or Aliasing:
+<foldername>\<subfoldername-1>\<subfoldername-2>\<subfoldername-3>\classesname
+as <Alias-name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+ Data Abstraction: It is a piller of oops and used for security concern.
+ if you want security over class member and member functions
+ you can use following accesse modifiere for access those properties and methods
+ 
+ Access Modifires:These are reserved keyword used a prefix before any class member 
+ ===============
+ or member or member functions. so that its security can be maintained.
+ 
+ How many types of security can be there
+ ========================================
+ 1.within the scope of class 
+ 2.outside the class scope 
+ 3.outside the current class but inside the child
+ 
+ within the class of scope :private
+ outside the class scope:  public
+ outside the current class :public but inside the child class private (protected)
+ Hence  That is why we have three Access modifiere for security scope.
+ 
+ 1.private 
+ 2.public 
+ 3.protected
+ 
+ Approch of Access modifires 
+ ================================
+ There are only two approchess
+ 1.with inheritance
+ 2.without inheritance
+ 
+ Public Access modifire :- 
+ syntex:      public <member-name>
+ ---------
+              public <method-name>
+
+			  
+=>  In public scope :: you can access the member /member function from any scope
+within the class ,outside the class ,from child class 
+
+Inside class  | outside class
+********************************
+$this Own   | $parent_obj from own class  no extend keyword  (non -Inheritance)
+$this child | $child_obj form child class  with extend keyword(Inheritance)
+
+
+Private: The most public is open the more private is close or it is complete 
+vice -versa (opposite ) of public.
+
+
+when in global scope static variable and local variable scope remains same.
+but inside function local variable scope becomes local but static becomes 
+global since it never destroyed it will remains initialized with the single.
+
+
+=>From private context we mean that it data member or member function can be only 
+accessed from own context even child can also not access it.
+for example: 
+Parent Tijori
+
+
+Protected : It have context such that no one can access it publicaly it remains private 
+from outside context from the child context it become public.
+
+if you want your data member and member function to be shared b/w only you can 
+you childs then declare them as protected.
+
+Protected data member are also called nominee data member.
+
+=====================================================================
+
+Difference b/w public ,protected or private
+
+Access modifire | within class | outside class | Inheritance class(child class)
+--------------------------------------------------------------------------------
+public            valid           valid           valid
+private           valid          invalid         invalid
+protected         valid          invalid          valid 
+
+
+
+
+
+

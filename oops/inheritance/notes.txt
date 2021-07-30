@@ -1,0 +1,62 @@
+Introduction to Inheritance
+**********************************
+
+Inheritance means code Reusebility
+In Inheritance one class consumed or use the Benifites of his prarents class without 
+actually being self implement.
+
+Inheritance means (virasat me milna) in simple term that means I(child)can access all 
+property and functionality of parent and grand parent.
+
+Important point to be kept in mind
++++++++++++++++++++++++++++++++++++++
+
+1.Inheritance can be applied in multi level class only 
+2.Minimum level of classes should 2 or more
+3.In order to use Inheritance extends keyword has to be used.
+4.Inheritance Terminology may change but concept will same.
+
+Inheritance Terminology
+========================
+
+first level class
+**********************
+Master class
+parent class
+super class
+Inherite class
+==================================
+
+Second level class
+**********************
+Child class, Inheriting class, sub class.......
+===================================================
+
+Advantage of Inheritance
+********************************
+1.Some concept like data Abstraction completely deals with Inheritance .
+2.Some concept like Run time Polymorphism (Method-over-riding) is only possible at Inheritance.
+
+3.Code Reusebility 
+4.Implement DRY(Do not repeate your self)-Approch
+
+
+Types of Inheritance
+*************************
+Single Inheritance 
+Multi level Inheritance
+Hybrid Inheritance
+Herierical Inheritance
+Multiple Inheritance
+
+PHP with Inheritance Types
+******************************
+
+Single   :yes
+Multi level  :yes
+Hybrid        :yes
+Herierical     :yes
+Multiple   (php dose not support multiple inheritance But possible using Interfaces and Traits )
+
+
+===================================================================

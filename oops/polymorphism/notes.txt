@@ -1,0 +1,110 @@
+Polymorphism
+==============
+polymorphisam is same as polynomial
+
+polynomial=poly(many) + mial(Terms)
+
+In animal kindom you remember as topic called Morphology
+Morphology means same identity many forms.
+
+Single Identity multiple signature
+for ex:-  + operator is polymorphisam in javascript and java
+* in python  python
+len() in python 
+
+similary polymorphisam can be observed in function .
+
+same name different signature.
+
+function test(x)
+{
+}
+function test(x,y)
+{
+}
+function test(x,y,z)
+{
+}
+
+This is polymorphism but have been Acheived by using overloading the Argument.
+Argument overloading in method
+
+Method overloading(with argument) or Method Overloading
+
+Note:: since php is not compile time language it will lead to fatal error
+
+fatal error due to Redeclaration
+
+function redclaration :Error : Can be Resolved by using __call()
+Magic function
+
+Class Redeclaration :Error: can be resolve using namespace
+
+Polymorphism Type:
+====================
+1.Method Overloading
+     compile Time
+	 Early static binding
+	    no inheritance Reqiured
+		In method overloading same method is overloaded with Diffrent Argument
+		No not possible in php
+		using :1.Argument overloading using  __call magic function
+		2.Method overloading using varg method
+		3.Using Interface
+		
+2.Method overriding
+    -Run time
+	-Late dynamic binding
+	-Reqiured Inheritance
+	In this when same method is declared inside child class the 
+	it over-rides parent method hence overriding
+	php supports
+	
+Polymorphism Best Example:
+Girls
+why boys cannot follow polymorphisam
+Inheritance complextion
+	
+
+	
+How to make namespace 
+==========================
+Namespace should be first line of the php script just after <?php ?> 
+
+Syntex:
+Declare a normal class
+class Test{
+//code
+}
+
+Use namespace <name_of_Namespace> or <Donot use any name>;
+
+Due to namespace is of two type
+userdefined namespace or named namespace
+gloabl namespace or Anonymous namespace:no name
+
+
+Naming convention of namespace
+**********************************
+Each namespace must follow class name convention
+pascal style
+
+Namespace name should be capital
+each line must be terminated .
+no other code must lie outside the namespace.
+
+signature of namespace
+***********************
+Body of the namespace of called signature
+namespace Testnamespace{
+
+//class and object will lie inside this
+}
+
+if some code Resides outsides then compilation error will be raised called as fatal error.
+
+Scope of the class
+*********************
+We know that in an uncapsulated class we can declare object of class inside or outside
+ But in a Enacapsulated where namespace is mendatory class will be local scope of namespace.
+
