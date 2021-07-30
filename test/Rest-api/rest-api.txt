@@ -1,0 +1,132 @@
+What is API
+
+Api :Application prograamming Interface
+if one Application want to communicate with another application the we may require API.
+
+Interface here means plateform
+
+web Application <----------Human
+                             (HTML/CSS/FORMS/VIEWS/PAGE)
+							 
+The html form admin panel which you provide to any person as interface where he can 
+intract with you Application.
+
+
+=>If human want to intract we provide some GUI or Interface 
+but if one app1 want intract with another application (Independent of language)
+in such a case we need some interface.
+
+such type of Interface B/w two differ prograamming application is called API.
+
+for ex:
+Android Application with java Application
+Android Application with php Application
+Android Application with mysql Application
+
+Here there are two main Application 
+client App1 :Request sent
+server App2 :Response Return
+
+
+let's understand Api as a general terminology
+***********************************************
+
+consider
+Rail yatri Application
+where is my train Application
+NTES CRIS Application
+Ibibio Application
+paytm Application
+
+All these Application Internally sent the request IRCTC.
+
+
+web Api and web services
+**************************
+
+Since API is a interface b/w native(perticular language) Application
+and API provides some kind of third party.
+
+if this service is accessed using internet 
+it is a service over the web
+hence it is a web service or api b/w two Application sharing the resource
+over the internet is called is web-api.
+
+web-api are of two type:
+1.Soap Api(Conventional or Traditional Apis which generated response only in xml)
+2.Rest Api: is a morderm apis Technique which generated response in json or yml.
+
+Soap(Simple object Accesee protocol)
+Rest(Representational state Transfer)
+Soap:=server full 
+Rest:server less
+
+Soap :Any protocol smtp ,ftp,....http
+Rest :HTTP(SSL peer off)/HTTPS(SSL Enabled Peer ON)
+
+Difference b/w rest and normal web api
+**************************************
+
+In Rest api URL remains unique and every request sent using HTTP METHODS
+
+GET
+PUT
+PATCH
+POST
+OPTIONS
+HEAD
+...etc
+
+If any API follows following conditions
+it is Rest Api...
+
+1. it should only use http(https) protocol
+2. json format output
+3.  it must support http methods
+4. URL should we uniqe 
+   url will be same but will be unique according to differ http method.
+   
+ Rest api will CRUD
+ ************************
+ 
+ Post Request create(Insert)
+ GET  Request  read(select)
+ put/pathch update put: fully update and pathch partially update.
+ Delete:complete  delete the record.
+
+
+
+Note: every rest api is a web api but every api is not rest api.
+
+Diffrence B/w Rest and soap
+
+In Rest format json
+In soap format it xml only
+Rest format is light
+In soap is heavy due to tags
+
+Rest is faster than soap
+Rest is not secure
+Soap is very secure due to its envelops
+
+But rest can be made secure using variaous token and Authorisation
+such token and Authorisation are web token or jwt(json web token) token or Oauth Token.
+(orignal Authorisation).
+
+Rest reqire low bandwidth but soap reuire high bandwidth.
+
+When to use soap when to use Rest
+*************************************8
+
+In light weight Application use Rest
+and heavy Application use soap
+for example:
+soap Api used to send millions of email in a second
+
+Soap Api is used millions of otp verification
+
+Java with soap good combination
+.net with soap is good combination
+php with soap bad combination
+php with rest good combination.
+

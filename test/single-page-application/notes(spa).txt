@@ -1,0 +1,100 @@
+   Introduction to SPA
+   *************************
+ SPA:: Is no 1 Technology and huge demand in the market you might have
+ heared about reactjs Developer ,vuejsDeveloper Angular developer
+ 
+these must be some Application called SPA.
+
+S=>Single
+P=>Page
+A=>Application
+
+SPA it is very light weight Application 
+Because it has only page
+and we know that single page Application are far far better than  multiple pages.
+
+Ques-I have 100 page website and I have low Bandwidth.
+
+suppose I have 100 Pages website and  I have low Bandwidth
+suppose I have 100 Pages my server has 100 differ request
+
+consider 1 person Arrivedd
+1 person 1 time 100 request 
+10 person 1 time 100 request*10 =>1000 Request
+100 person 1 time 100 request *100=>10000 Request
+loading Time will be increase:: downtime
+
+solution 
+-------
+100 pages ------->1 page single url--->single request
+1------> 1 request
+100------>100 request
+
+downtime Avg =multiple vs Single page
+100/100            10000/100
+
+1 Request =100*multiple request
+our single page application can handle 10000 request before downtime
+ques:-
+But sir how single page Application can have dynamic view 
+we will make dynamic element or component not page
+
+Ques:-
+sir what is Technology
+Html and css and javascript
+
+sir Earliare we were using php in that we were binding everythinng using php
+but now we are not using php.
+
+How html page can be used to generate Dynamic content
+There are to possible solution 
+
+1. Go for Any MVC framework for front -end 
+  ex:- Angular js,Angular ,reactsjs,vuejsDeveloper
+  
+2.use pure vanilla js (javascript and jquery)
+
+Ques:- sir page will .html correct sir said very correct but my doubt is
+.sir php needs server but html donot need server
+that means my application can run from desktop only
+
+That is all the spa Application uses server less protocols and we need Api'said
+to work with database.
+And generate dynamic content.
+
+we need a backend services also 
+and this backend services will be provided by Any server side Technology
+
+Html is front end               Php is a backend
+
+Hence php cannot be injected in front end HTml because mime type of html file
+is .html and to inject php we need .php mime type 
+
+Ques:-
+what is the way how to resolve this problem 
+
+Solution :perform Dependency Injection 
+and using API using interopperability are the degine pattern of dependency
+injection.
+
+Ques:-who is the responsible person for doing this
+1.Deginer will do degine
+2.front end person with the data 
+3.Backend person will work database and api's (model)
+
+ques:-what will be Technology ?
+1.Html css js jquery front end
+2.Backend php
+
+But there is a stack for everythinng for full feature Application 
+AWS serverless 
+Such type of Application is called as sever-less Application
+ 
+ Ques:- what is serverless web Application 
+ 
+ Single page Application (serverless) with serverless protocalls and Api's
+ 
+ (SERVERLESS)+AWS SERVICE
+  
+
+

@@ -1,0 +1,98 @@
+How to parse json data from Request:-
+*************************************
+1.using form
+Get and post
+no of Request
+ 1.http/1.1 GET
+ 2.http/1.1 post
+
+2.using postman
+  Any Request 
+1.http/1.1 GET
+2.http/1.1 post
+3.http/1.1 patch
+4.http/1.1 delete
+5.http/1.1 lock
+6.http/1.1 option
+
+
+Encoding of data from Request
+===============================
+1.formdata(form html5)
+Associative Array :GET and POST
+
+2.urlencode Data(form html 4)
+Associative Array:GET and POST using key and values pairs
+3.Raw Data(Latest using json format)
+json object:key and values pairs
+
+
+Code How to Read/parse json data
+=================================
+Sending Request from post for formadata
+open the postman 
+write the url for Request
+select the type of http method Request
+goto body Section
+
+formdata section
+formdata json data to urlencode
+
+    |
+ Bind key and values.
+
+==========================================
+
+
+Sending Request from post for rawdata(json)
+open the postman 
+write the url for Request
+select the type of http method Request
+goto body Section
+
+formdata section
+formdata json data to urlencode
+
+    |
+ Bind key and values inside json object.
+ note:Highly case senstive no extra comma or single qoute Recommended.
+
+
+Note: if you are using formdata browser  can read using post or get
+but if you are using raw only console read it.
+
+And console takes input STDIN
+and STDIN uses protocol php://input
+
+php://input 
+php://input is a read-only stream that allows you to read raw data from the request body. In the case of POST requests, it is preferable to use php://input instead of $HTTP_RAW_POST_DATA as it does not depend on special php.ini directives. Moreover, for those cases where $HTTP_RAW_POST_DATA is not populated by default, it is a potentially less memory intensive alternative to activating always_populate_raw_post_data. php://input is not available with enctype="multipart/form-data".
+
+
+
+Reading/parsing data from json-data(Raw Data)
+step are::
+Data type of raw_data =>json
+$raw_data=file_get_contents("php://input");
+
+
+json_decode($raw_data,true);
+
+$request_data=json_decode($raw_data,true);
+
+Write a function raw to handle Raw and json Data
+==================================================
+
+filename: json_helper.php
+
+function raw($keyname='')
+{
+	$raw_data=file_get_contents("php://input");
+	$_RAW=json_decode($raw_data,true);
+	if(empty($keyname))
+	{
+	return $_RAW;
+	}
+	else{
+	return $_RAW[$keyname];
+	}
+}

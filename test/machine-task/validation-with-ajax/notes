@@ -1,0 +1,25 @@
+How to deal with ajax Response
+=============================
+In ajax There major two person
+  1.REQUEST PERSON:May serverful or may serverless
+   JS
+
+  2.RESPONSE PERSON:
+  serverfull
+  php
+   |---->text/html
+           |--------->No interopperabiliy
+            no type conversion
+   |---->application/json(REST-API)
+             |------>interopperbility
+                 JSON type conversion
+                 php---->json
+                 front end ---->js
+                                 |--------->json--->text/html(str)
+                                       1.JSON.stringfy()
+                                       2.JSON.parse()
+   |----->application/xml(soap)
+                |--------------------->Interooperabity
+                                       |--->xml parse
+                                       |--->simple xml parser
+                                       |--->simplexmldocument();

@@ -1,0 +1,14 @@
+ {
+ "Student":[
+ {
+ "name":"vipin",
+ "class":"12th",
+ "status":true
+ },
+ {
+ "name":"vipin",
+ "class":"12th",
+ "status":true
+ }
+ ]
+ }

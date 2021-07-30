@@ -1,0 +1,5 @@
+RewriteEngine On
+Options -Indexes
+DirectoryIndex server.php
+
+RewriteRule ^(server)/([a-zA-Z0-9]+)$ server.php?route=$2 [QSA]

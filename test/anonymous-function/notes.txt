@@ -1,0 +1,39 @@
+  What are Anonymous function
+  *******************************
+  Anonymous means without any name so anonymous function means any function without 
+  name is called a anonymous.
+  
+  Ex:-
+  function test(){
+  echo "The is functions";
+  }
+  
+  #calling is possible for named function but the question how will you
+  call some one who dose not name.
+  
+  syntex of anonymous function
+  function(){
+  //code;
+  };
+  
+ Anonymous function are also called inline function and must be terminated.
+ Anonymous function are same as jquery anonymous functions .
+ 
+ Note that anonymous function has different name at different use 
+ 1.if assign to a variable  inline functions
+ 2.passed as Arguments its become closure or callback in functions.
+ 
+ =============================================================
+ 
+ second largest salary in table
+ 
+ select max(salary) from tblname;
+ 
+ select max(salary) from tblname where salary<(select max(salary) from tblname);
+ 
+ 
+ second method without where clause
+ ===================================
+ select * from tblname order by salary Desc
+ 
+ select *from tblname order by salary asc limit 0,1;

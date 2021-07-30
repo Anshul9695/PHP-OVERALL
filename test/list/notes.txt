@@ -1,0 +1,75 @@
+working with list language construct
+========================================
+Array unpacking in php is very very similar to python list unpacking
+but make make sure list in python is a datatype but in php list is not 
+a datatype please refer to php.net official Documentation.
+
+It is crime if you list a datatype.
+List in python 
+===================
+x=[10,20,30]
+print(type(x))
+a=x[0]
+b=x[1]
+c=x[2]
+print(a)
+print(b)
+print(c)
+
+================
+list unpacking
+================
+x,y,z=[10,20,30]
+print(x)
+print(y)
+print(z)
+
+
+
+
+but if you same concept in php it want to work 
+but list is a language construct according to rasmus ledorf but such thing not possible
+in current may be older version or later version
+
+list as function can support multiple argument without passing any value
+list(,,$c)=[10,20,30]
+$c=30
+
+so list function is used for Array unpacking.
+<?php
+$arr=array(10,20,30);
+print_arr($arr);
+
+echo "if you want to break </br>";
+$a=$arr[0];
+$b=$arr[1];
+$c=$arr[2];
+
+echo "a={$a},b={$b} and c ={$c}</br>";
+
+list($a,$b,$c)=array(100,200,300);
+
+echo "a {$a},b={$b},and c={$c} </br>";
+
+list $a,$b,$c=[100,200,300]; list is a language construct if it support Expression 
+Binding in single line where echo does not support
+
+echo "a={$a},b={$b} and c={$c} </br>";
+
+list $a,$b,$c=[100,200,300];
+var_dump(10,20,30);
+var_dump 10,20,30 it will lead to error
+
+echo '<hr/>';
+#list unpacking for multiple a argument 
+list($a,$b,$c)=[100,200,300];
+echo "a={$a},b={$b} </br>";
+
+passing more argument on right side of array
+list($a,$b)=[100,200,300,400];
+echo "a= {$a},b={$b}</br>";
+
+passing less arument on right but using more unpacking variable
+list($a,$b,$c,$d,$g)=[100,200,300,400];
+
+echo "a={$a},b={$b},c={$c},d={$d},g={$g}</br>"; offset error

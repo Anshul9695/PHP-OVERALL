@@ -1,0 +1,23 @@
+How to run Any php project using IIS server
+By defualt IIS server configuration is hidden or not installed in windows.
+
+Follow the steps
+=================
+control panel 
+    Add and Remove programm
+	window feature on and off
+	select Internet information service (select) and Install it
+	wait for a minute
+	
+	IIS server will be installed
+Server for windows Administrative Tools
+==========================================
+Here is all window admin Related software
+oracle Database Driver(ODBC)
+windows Task Schedular
+IIS server manager
+     |click and IIS control panel
+	 start the request (pooling)
+	 and make a request to port 80
+	 
+7575000218

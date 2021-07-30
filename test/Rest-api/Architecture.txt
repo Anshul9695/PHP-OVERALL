@@ -1,0 +1,33 @@
+ Rest Api
+ 
+ 1.Baseurl:  Domain Name
+ 2.End point  :ulr to file or resource
+ 3.Response should be in json
+ 4.Http method should be used 
+ 
+ Api for GET Request
+ =====================
+ 
+ URL:http://localhost
+ Baseurl=http://localhost/test/rest-api
+ 
+ End Point=user.php
+          =product.php
+		  =orders.php
+		  
+complete URl:
+http://localhost/test/rest-api/users.php
+http://localhost/test/rest-api/product.php
+http://localhost/test/rest-api/orders.php
+
+Request Sent :POSTMAN
+                Request sent: Formdata or jsondata or urlencode data
+				server response :json
+Request :http method
+GET
+PUT
+POST
+DELETE
+ 
+ 
+ 
